@@ -62,6 +62,12 @@ if (isset($_SESSION['logged_in'])) {
     $stmt_orders->bind_param('i', $user_id);
     $stmt_orders->execute();
     $orders = $stmt_orders->get_result();
+
+    // Fetch contact messages
+    $stmt_contacts = $conn->prepare("SELECT * FROM contacts WHERE user_id=?");
+    $stmt_contacts->bind_param('i', $user_id);
+    $stmt_contacts->execute();
+    $contact_messages = $stmt_contacts->get_result();
 }
 
 ?>
