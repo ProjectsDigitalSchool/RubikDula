@@ -11,7 +11,7 @@
         </div>
     </section>
 
-      <section id="brand" class="hidden container">
+      <section id="brand" class="container">
         <div class="row">
             <img class="logo img-fluid col-lg-3 col-md-6 col-sm-12" src="assets/imgs/brand1.jpg">
             <img class="logo img-fluid col-lg-3 col-md-6 col-sm-12" src="assets/imgs/brand2.jpg">
@@ -26,7 +26,7 @@
                 <p>Newest Products</p>
             </div>
 
-      <section id="new" class="hidden container">
+      <section id="new" class="container">
         <div class="row">
         <?php include('server/get_featured_products2.php')?>
 
@@ -55,7 +55,7 @@
                 <hr>
                 <p>Check our Featured Products</p>
             </div>
-            <section class="hidden" id="featured" class="my-5 pb-5">
+            <section id="featured" class="my-5 pb-5">
                 <div class="row mx-auto container-fluid">
                 <?php include('server/get_featured_products3.php')?>
 
@@ -100,7 +100,7 @@
           <hr>
           <p>Check the greatest Fragrances</p>
       </div>
-      <section class="hidden" id="featured" class="my-5">
+      <section id="featured" class="my-5">
           <div class="row mx-auto container-fluid">
 
           <?php include('server/get_featured_products.php')?>
