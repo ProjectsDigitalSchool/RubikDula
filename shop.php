@@ -352,7 +352,7 @@ if (isset($_POST['search'])) {
                 </svg></li>
             </ul>
         </div>
-        <section class="hidden" id="featured" class="my-5">
+        <section class="hidden show" id="featured" class="my-5">
             <div class="row mx-auto container-fluid">
                 <?php while ($row = $products->fetch_assoc()) { ?>
                     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
